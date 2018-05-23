@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/NovelSpider.iml" filepath="$PROJECT_DIR$/.idea/NovelSpider.iml" />
+      <module fileurl="file://F:/有用的爬虫/单本小说爬虫笔趣阁/.idea/单本小说爬虫笔趣阁.iml" filepath="F:/有用的爬虫/单本小说爬虫笔趣阁/.idea/单本小说爬虫笔趣阁.iml" />
+    </modules>
+  </component>
+</project>
