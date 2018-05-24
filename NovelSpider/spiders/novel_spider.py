@@ -16,7 +16,7 @@ class NovelSpiderSpider(scrapy.Spider):
         le = LinkExtractor(restrict_css='#list > dl:nth-child(1)')  # 创建提取规则
         links = le.extract_links(response)      # 提取链接
         if links:
-            for link in links[0:3]:
+            for link in links:
                 page += 1
                 yield Request(link.url, callback=self.parseText, meta={'page': page})
 

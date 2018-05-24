@@ -65,7 +65,8 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    'NovelSpider.pipelines.NovelspiderPipeline': 300,
+    #'NovelSpider.pipelines.NovelspiderPipeline': 300,   #直接生成txt
+    'NovelSpider.pipelines.MySQLPipeline': 300,     #直接存入mysql
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
@@ -88,3 +89,8 @@ ITEM_PIPELINES = {
 #HTTPCACHE_DIR = 'httpcache'
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
+
+MYSQL_DB_NAME = " "  # 在这里输入mysql数据库名
+MYSQL_HOST = "localhost"
+MYSQL_USER = ""      # 在这输入mysql用户名
+MYSQL_PASSWORD = ""   # 在这输入mysql密码
