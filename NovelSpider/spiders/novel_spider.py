@@ -9,7 +9,7 @@ class NovelSpiderSpider(scrapy.Spider):
     name = 'novel_spider'
     allowed_domains = ['biquge.com.tw']
     # 待爬取小说目录页面链接，如：http://www.biquge.com.tw/18_18550/
-    start_urls = ['http://www.biquge.com.tw/18_18550/']
+    start_urls = ['http://www.biquge.com.tw/0_83/']
 
     def parse(self, response):
         page = 0
