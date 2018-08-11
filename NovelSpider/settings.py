@@ -65,8 +65,8 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    #'NovelSpider.pipelines.NovelspiderPipeline': 300,   #直接生成txt
-    'NovelSpider.pipelines.MySQLPipeline': 300,     #直接存入mysql
+    'NovelSpider.pipelines.NovelspiderPipeline': 300,   #直接生成txt
+    #'NovelSpider.pipelines.MySQLPipeline': 300,     #直接存入mysql
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
